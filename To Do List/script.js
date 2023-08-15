@@ -6,6 +6,7 @@ function addItem() {
   newItem.innerText = inputBox.value;
   list.appendChild(newItem);
   inputBox.value = '';
+
   const doneButton = document.createElement('button');
   doneButton.innerText = 'Done';
   doneButton.classList.add('done-button');
@@ -13,6 +14,7 @@ function addItem() {
     newItem.classList.toggle('done');
   });
   newItem.appendChild(doneButton);
+
   const deleteButton = document.createElement('button');
   deleteButton.innerText = 'Delete';
   deleteButton.classList.add('delete-button');
